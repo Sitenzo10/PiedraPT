@@ -38,10 +38,10 @@ public class Parser{
                 }
 	    }
 	    
-	    if ( (command != null) && (moves.isValidMoveCommand(command)) )
+	    if ( (command.equals("TIJERAS")) || (command.equals("PAPEL")) ||
+				(command.equals("PIEDRA")) || (command.equals("LAGARTO")) || (command.equals("SPOCK")) )
 	        return new Move(command);
 	    
-	    // we return a move with no associated command, as it is unknown.
 	    return new Move();
     }
 }
