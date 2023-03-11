@@ -39,7 +39,7 @@ public class Parser{
 	    }
 	    
 	    if ( (command.equals("TIJERAS")) || (command.equals("PAPEL")) ||
-				(command.equals("PIEDRA")) || (command.equals("LAGARTO")) || (command.equals("SPOCK")) )
+				(command.equals("PIEDRA")) || (command.equals("TORITO")) || (command.equals("SEPIA")) )
 	        return new Move(command);
 	    
 	    return new Move();
